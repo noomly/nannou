@@ -788,8 +788,9 @@ pub fn format_size_bytes(format: wgpu::TextureFormat) -> u32 {
         | Rgba8UnormSrgb | Rgba8Snorm | Rgba8Uint | Rgba8Sint | Bgra8Unorm | Bgra8UnormSrgb
         | Rgb10a2Unorm | Rg11b10Float => 4,
 
-        Rg32Uint | Rg32Sint | Rg32Float | Rgba16Uint | Rgba16Sint | Rgba16Float | Rgba32Uint
-        | Rgba32Sint | Rgba32Float => 8,
+        Rg32Uint | Rg32Sint | Rg32Float | Rgba16Uint | Rgba16Sint | Rgba16Float => 8,
+
+        Rgba32Uint | Rgba32Sint | Rgba32Float => 16,
 
         Depth32Float | Depth24Plus | Depth24PlusStencil8 => 4,
     }
